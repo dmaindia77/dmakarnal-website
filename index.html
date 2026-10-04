@@ -4,77 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dance Mania Academy | Karnal</title>
-<meta name="description" content="Dance Mania Academy, Karnal — dance classes, kids programs, personality development and special workshops.">
+<meta name="description" content="Dance Mania Academy, Karnal — dance classes, kids programs, confidence and personality development.">
 <style>
-:root{--bg:#fff;--text:#171717;--muted:#666;--accent:#111;--soft:#f5f5f5}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;z-index:5}
-.logo{font-weight:800;font-size:20px}.navlinks a{margin-left:22px;text-decoration:none;color:#222}
-.hero{padding:90px 8%;background:linear-gradient(135deg,#f7f7f7,#fff);text-align:center}
-.hero h1{font-size:clamp(42px,7vw,76px);margin:0 0 15px;line-height:1.05}.hero p{font-size:20px;color:var(--muted);max-width:700px;margin:0 auto 30px}
-.btn{display:inline-block;background:#111;color:#fff;padding:14px 24px;border-radius:8px;text-decoration:none;margin:6px}
-section{padding:70px 8%;max-width:1200px;margin:auto}h2{text-align:center;font-size:36px;margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{padding:28px;background:var(--soft);border-radius:14px}.card h3{margin-top:0}
-.center{text-align:center}.review{font-size:18px;color:#444}
-footer{background:#111;color:#fff;text-align:center;padding:35px 8%}
-@media(max-width:700px){.navlinks{display:none}.hero{padding:65px 6%}section{padding:55px 6%}}
+:root{--text:#151515;--muted:#666;--soft:#f6f6f6;--line:#e9e9e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+nav{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 6%;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#111;font-weight:800}.brand img{width:52px;height:52px;object-fit:contain}.brand span{font-size:17px;letter-spacing:.4px}
+.navlinks a{margin-left:22px;text-decoration:none;color:#222;font-size:15px}
+.hero{padding:78px 8% 88px;text-align:center;background:linear-gradient(135deg,#fafafa,#fff)}
+.hero-logo{width:145px;height:145px;object-fit:contain;margin-bottom:12px}
+.hero h1{font-size:clamp(42px,7vw,76px);margin:0 0 12px;line-height:1.03}
+.hero p{font-size:19px;color:var(--muted);max-width:720px;margin:0 auto 28px}
+.btn{display:inline-block;background:#111;color:#fff;padding:13px 22px;border-radius:8px;text-decoration:none;margin:5px}
+.btn.light{background:#fff;color:#111;border:1px solid #ddd}
+section{padding:72px 8%;max-width:1200px;margin:auto}h2{text-align:center;font-size:36px;margin:0 0 35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{padding:28px;background:var(--soft);border-radius:16px;border:1px solid #eee}.card h3{margin-top:0;font-size:21px}
+.center{text-align:center}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.stat{padding:25px;text-align:center;border:1px solid #eee;border-radius:14px}.stat strong{display:block;font-size:30px}
+.cta{background:#111;color:#fff;max-width:none;text-align:center}.cta p{color:#ddd}
+footer{background:#0c0c0c;color:#fff;text-align:center;padding:35px 8%}
+@media(max-width:700px){.navlinks{display:none}.brand img{width:45px;height:45px}.brand span{font-size:14px}.hero{padding:55px 6%}.hero-logo{width:115px;height:115px}section{padding:55px 6%}.stats{grid-template-columns:1fr}.hero h1{font-size:45px}}
 </style>
 </head>
 <body>
 <nav>
-  <div class="logo">DANCE MANIA ACADEMY</div>
-  <div class="navlinks">
-    <a href="#classes">Classes</a><a href="#programs">Programs</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
-  </div>
+<a class="brand" href="#"><img src="dma-logo.png" alt="Dance Mania Academy logo"><span>Dance Mania Academy</span></a>
+<div class="navlinks">
+<a href="#classes">Classes</a><a href="#programs">Programs</a><a href="#why">Why DMA</a><a href="#contact">Contact</a>
+</div>
 </nav>
 
 <header class="hero">
-  <h1>Dance. Confidence. Growth.</h1>
-  <p>Dance Mania Academy — a place where children learn dance while building confidence, personality and life skills.</p>
-  <a class="btn" href="#contact">Book a Free Enquiry</a>
-  <a class="btn" href="#classes">Explore Classes</a>
+<img class="hero-logo" src="dma-logo.png" alt="Dance Mania Academy">
+<h1>Dance. Confidence. Growth.</h1>
+<p>Dance Mania Academy, Karnal — where children learn dance while developing confidence, personality, discipline and life skills.</p>
+<a class="btn" href="#contact">Enquire Now</a>
+<a class="btn light" href="#classes">Explore Classes</a>
 </header>
 
 <section id="classes">
 <h2>Our Classes</h2>
 <div class="grid">
-  <div class="card"><h3>Kids Dance Classes</h3><p>Structured dance training for young learners with a focus on enjoyment, discipline and confidence.</p></div>
-  <div class="card"><h3>Dance Training</h3><p>Regular classes designed to develop technique, rhythm, performance and stage confidence.</p></div>
-  <div class="card"><h3>Special Workshops</h3><p>Master classes, seasonal workshops and special programs for students.</p></div>
-  <div class="card"><h3>Personality Development</h3><p>Activities that encourage communication, confidence, teamwork and self-expression.</p></div>
+<div class="card"><h3>Kids Dance Classes</h3><p>Age-appropriate dance training in a fun, structured environment.</p></div>
+<div class="card"><h3>Regular Dance Training</h3><p>Technique, rhythm, choreography, performance and stage confidence.</p></div>
+<div class="card"><h3>Special Workshops</h3><p>Master classes and special learning experiences throughout the year.</p></div>
+<div class="card"><h3>Personality Development</h3><p>Confidence, communication, teamwork and self-expression through activities.</p></div>
 </div>
 </section>
 
 <section id="programs">
-<h2>Programs & Activities</h2>
+<h2>Programs</h2>
 <div class="grid">
-  <div class="card"><h3>Summer Camp</h3><p>Multi-activity learning through dance, art, games, self-defence and personality development.</p></div>
-  <div class="card"><h3>Club Membership</h3><p>Flexible benefits and class options for students who want more engagement throughout the year.</p></div>
-  <div class="card"><h3>Events & Workshops</h3><p>Special learning opportunities and performance-focused experiences.</p></div>
+<div class="card"><h3>Summer Camp</h3><p>A multi-activity experience combining dance, creativity, games, self-defence and personality development.</p></div>
+<div class="card"><h3>DMA Club Membership</h3><p>Flexible membership benefits designed for students who want more learning opportunities during the year.</p></div>
+<div class="card"><h3>Events & Master Classes</h3><p>Special sessions that give students new experiences and opportunities to learn.</p></div>
 </div>
 </section>
 
-<section id="reviews">
-<h2>Why Parents Choose DMA</h2>
-<div class="card center">
-  <p class="review">“A learning environment where dance is only the beginning — confidence and personality growth matter too.”</p>
-  <p><strong>Dance Mania Academy, Karnal</strong></p>
+<section id="why">
+<h2>Why Choose DMA?</h2>
+<div class="stats">
+<div class="stat"><strong>5★</strong>Parent reviews</div>
+<div class="stat"><strong>94+</strong>Google reviews</div>
+<div class="stat"><strong>3–16+</strong>Age groups</div>
 </div>
+<p class="center" style="max-width:760px;margin:28px auto 0;color:#555">Our goal is bigger than teaching dance. We want students to become more confident, expressive, disciplined and comfortable in their own abilities.</p>
 </section>
 
-<section id="contact">
-<h2>Start With DMA</h2>
-<div class="card center">
-  <p>Want to know about batches, fees or a trial/enquiry?</p>
-  <p><strong>Karnal, Haryana</strong></p>
-  <a class="btn" href="https://wa.me/" target="_blank">WhatsApp Enquiry</a>
-</div>
+<section class="cta" id="contact">
+<h2>Ready to Start?</h2>
+<p>Ask us about batches, fees, trial classes, memberships and upcoming programs.</p>
+<a class="btn" href="https://wa.me/" target="_blank">WhatsApp Enquiry</a>
+<a class="btn light" href="mailto:">Email Us</a>
+<p style="margin-top:24px"><strong>Dance Mania Academy, Karnal, Haryana</strong></p>
 </section>
 
-<footer>
-  <strong>Dance Mania Academy</strong><br>
-  Karnal, Haryana<br><br>
-  © 2026 Dance Mania Academy. All rights reserved.
-</footer>
+<footer>© 2026 Dance Mania Academy · Karnal, Haryana</footer>
 </body>
 </html>
